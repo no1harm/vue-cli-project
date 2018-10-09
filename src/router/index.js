@@ -11,10 +11,12 @@ export default new router({
     // 请注意这里，是 routes ,不是 router，更不是 routers！
     routes:[
         {
+            name:'world',
             path:'/world',
             component:HelloWorld
         },
         {
+            name:'earth',
             path:'/earth',
             component:HelloEarth
         }
