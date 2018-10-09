@@ -11,8 +11,7 @@
             <button @click="changeStoreData">改变全局状态属性 +20</button>
             actions:
             <button @click="useActions">改变全局状态属性 +20</button>
-            getters:
-            <button>改变全局状态属性</button>
+            getters:{{ getGetterData}}
         </div>
         <child :msg='fromParent' @getFromChild='getChildMsg'></child>
     </div>
@@ -49,6 +48,9 @@ export default {
     computed:{
         defalutStoreData:function(){
             return this.$store.state.num
+        },
+        getGetterData(){
+            return this.$store.getters.getNum
         }
     }
 }

@@ -41,7 +41,7 @@ export default {
     },
     computed:{
         defalutStoreData:function(){
-            return this.$store.getters.getNum
+            return this.$store.state.num
         }
     }
 }
